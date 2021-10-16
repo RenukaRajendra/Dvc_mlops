@@ -23,9 +23,11 @@ def split_and_save(config_path, params_path):
 
     train, test = train_test_split(df, test_size=split_ratio, random_state=random_state)
 
+    create_directory([os.path.join(artifacts_dir, split_data_dir)])
+    
     split_data_dir = config["artifacts"]["split_data_dir"]
 
-    create_directory([os.path.join(artifacts_dir, split_data_dir)])
+   
 
     train_data_filename = config["artifacts"]["train"]
     test_data_filename = config["artifacts"]["test"]
