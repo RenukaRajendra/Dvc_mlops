@@ -37,7 +37,7 @@ stages:
       - artifacts/model_dir/ElasticNet.model
 
   evaluate:
-    cmd: python src/stage_04_evaluate.py --config=config/config.yaml --params=params.yaml
+    cmd: python src/stage_04_model.py --config=config/config.yaml --params=params.yaml
     deps:
       - src/stage_04_evaluate.py
       - src/utils/all_utils.py
