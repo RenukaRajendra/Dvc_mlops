@@ -25,7 +25,7 @@ def split_and_save(config_path, params_path):
 
     split_data_dir = config["artifacts"]["split_data_dir"]
 
-    create_directory([os.path.join(artifacts_dir, split_data_dir)])
+    create_directory([os.path.join(artifacts_dir,split_data_dir)])
 
     train_data_filename = config["artifacts"]["train"]
     test_data_filename = config["artifacts"]["test"]
